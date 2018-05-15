@@ -10,9 +10,10 @@ namespace Ludo
     {
         public static void Main(string[] args)
         {
-            // Start a new Ludo Game 
-            // by making an instans of game class
+            // Starts a new Ludo Game 
             Game Ludo = new Game();
+
+            Console.ReadKey();
         }
     }
 }

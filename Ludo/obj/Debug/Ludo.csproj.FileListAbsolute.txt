@@ -1,0 +1,7 @@
+C:\Users\SKP\source\repos\Ludo\Ludo\bin\Debug\Ludo.exe.config
+C:\Users\SKP\source\repos\Ludo\Ludo\bin\Debug\Ludo.exe
+C:\Users\SKP\source\repos\Ludo\Ludo\bin\Debug\Ludo.pdb
+C:\Users\SKP\source\repos\Ludo\Ludo\obj\Debug\Ludo.csproj.CoreCompileInputs.cache
+C:\Users\SKP\source\repos\Ludo\Ludo\obj\Debug\Ludo.exe
+C:\Users\SKP\source\repos\Ludo\Ludo\obj\Debug\Ludo.pdb
+C:\Users\SKP\source\repos\Ludo\Ludo\obj\Debug\Ludo.csprojAssemblyReference.cache
