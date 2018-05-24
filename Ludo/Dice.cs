@@ -29,7 +29,7 @@ namespace Ludo
             for (int i = 3; i > 0; i--)
             {
                 Console.Write(" . ");
-                System.Threading.Thread.Sleep(100);
+                System.Threading.Thread.Sleep(500);
 
             }
 

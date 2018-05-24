@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Ludo
 {
     // colors for the tokens and players
-    public enum GameColor { Green, Blue, Red, Yellow};
+    public enum GameColor { Green, Blue, Red, Yellow, None };
     // States for the tokens
     public enum GameState { InPlay, Finished };
     public class Game
@@ -16,6 +16,7 @@ namespace Ludo
         private Player[] players;
         private int numberOfPlayers;
         private int playerTurn = 1;
+        private int throws = 0;
 
         private Dice dice = new Dice();
         //Game constructor
@@ -122,6 +123,7 @@ namespace Ludo
                 }
                 while (Console.ReadKey().KeyChar != 't');
                 WriteLine("Your die landed on: " + dice.ThrowDice().ToString());
+                throws++;
                 ShowTurnOptions(myTurn.GetTokens());
                 break;
             }
@@ -175,19 +177,34 @@ namespace Ludo
             WriteLine("You have " + choice.ToString() + " choices this turn", 2000);
 
             //No choices
-            if (choice == 0)
+            if (choice == 0 && throws >= 3)
             {
                 this.ChangeTurn();
             }
+
+            if (choice == 0)
+            {
+                this.TakeTurns();
+            }
+
             else
             {
-                WriteLine("Choos which token you wanna move");
+                
+                MoveTokens();
 
             }
         }
 
+        private void MoveTokens()
+        {
+            WriteLine("Choose which token you wanna move");
+        }
+
         private void ChangeTurn()
         {
+
+            throws = 0;
+
             WriteLine("", 1000);
             if (playerTurn == numberOfPlayers)
             {
