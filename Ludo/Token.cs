@@ -11,8 +11,10 @@ namespace Ludo
     public class Token
     {
         private int tokenId;
+        internal int? position { get; set; } = null;
+        internal int fieldsLeft { get; set; } = 56;
         private GameColor color;
-        private TokenState state;
+        internal TokenState state { get; set; }
 
         // token constructor
         public Token(int id, GameColor clr)
@@ -31,10 +33,18 @@ namespace Ludo
         {
             return this.color;
         }
-
-        public TokenState GetState()
+        /*
+        public TokenState GetState
         {
-            return this.state;
+            get
+            {
+                return state;
+            }
+            set
+            {
+                state = value;
+            }
         }
+        */
     }
 }

@@ -16,11 +16,7 @@ namespace Ludo
             {
                 AllFields.Add(new Field());
             }
-
         }
-        
-
     }
-
 }
 

@@ -9,6 +9,6 @@ namespace Ludo
     class Field
     {
         internal GameColor FieldColor { get; set; } = GameColor.None;
-        internal List<Token> OccupyToken = new List<Token>();
+        internal List<Token> OccupyTokens = new List<Token>();
     }
 }
